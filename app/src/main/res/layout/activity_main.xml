@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        android:text="Wireless Comrade"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/idradioGroup"
+        android:layout_width="223dp"
+        android:layout_height="241dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/idRadioWood"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:text="Wood Tier: $2/month  unlimited call, text, and data" />
+
+        <RadioButton
+            android:id="@+id/idRadioStone"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:text="Stone Tier: $10/month  unlimited call, text, and data" />
+
+        <RadioButton
+            android:id="@+id/idRadioSheep"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:text="Sheep Tier: $15/month  unlimited call, text, and data" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/pixelwood" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/pixelstone" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/pixelsheep" />
+
+    <TextView
+        android:id="@+id/idTextOutput"
+        android:layout_width="293dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idButton" />
+
+    <Button
+        android:id="@+id/idButton"
+        android:layout_width="210dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="12dp"
+        android:text="Purchase"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idNumber" />
+
+    <EditText
+        android:id="@+id/idNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="3dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Amount to buy"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idradioGroup" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="74dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="6dp"
+        android:text="10% discount on 2 or more"
+        app:layout_constraintStart_toEndOf="@+id/idNumber"
+        app:layout_constraintTop_toBottomOf="@+id/idradioGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
